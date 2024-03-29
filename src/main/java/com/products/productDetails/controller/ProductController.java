@@ -8,9 +8,9 @@ import com.products.productDetails.model.ProductDetails;
 import com.products.productDetails.service.ProductService;
 import com.products.productDetails.validator.ProductDetailsValidator;
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,16 +19,14 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/product-details/v1")
+@RequiredArgsConstructor
 public class ProductController {
 
-    @Autowired
-    private ProductService productService;
+    private final ProductService productService;
 
-    @Autowired
-    private ProductDetailsFactory productDetailsFactory;
+    private final ProductDetailsFactory productDetailsFactory;
 
-    @Autowired
-    private ProductDetailsValidator productDetailsValidator;
+    private final ProductDetailsValidator productDetailsValidator;
     private final Logger logger =
             LoggerFactory.getLogger(ProductController.class);
     @PostMapping("/product")

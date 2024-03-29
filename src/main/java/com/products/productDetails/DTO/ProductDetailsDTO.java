@@ -8,7 +8,6 @@ import lombok.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
 @Builder
 public class ProductDetailsDTO {
     @NotEmpty(message = "ProductName should not be empty or null")
