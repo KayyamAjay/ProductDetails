@@ -12,7 +12,7 @@ public class ProductDetailsRO {
 
     private String productBrand;
 
-    private int productPrice;
+    private long productPrice;
 
     private int stockQuantity;
 }

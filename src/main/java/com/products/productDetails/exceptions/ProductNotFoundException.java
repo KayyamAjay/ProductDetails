@@ -1,4 +1,4 @@
-package com.products.productDetails.error;
+package com.products.productDetails.exceptions;
 
 public class ProductNotFoundException extends Exception{
 

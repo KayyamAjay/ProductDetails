@@ -1,6 +1,6 @@
 package com.products.productDetails.service;
 
-import com.products.productDetails.error.ProductNotFoundException;
+import com.products.productDetails.exceptions.ProductNotFoundException;
 import com.products.productDetails.model.ProductDetails;
 import com.products.productDetails.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;

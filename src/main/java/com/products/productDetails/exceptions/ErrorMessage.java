@@ -1,4 +1,4 @@
-package com.products.productDetails.error;
+package com.products.productDetails.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

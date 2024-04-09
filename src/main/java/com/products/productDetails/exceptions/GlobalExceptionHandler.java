@@ -1,4 +1,4 @@
-package com.products.productDetails.error;
+package com.products.productDetails.exceptions;
 
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.http.HttpStatus;

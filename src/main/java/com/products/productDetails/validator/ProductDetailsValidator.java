@@ -3,7 +3,6 @@ package com.products.productDetails.validator;
 import com.products.productDetails.model.ProductDetails;
 import com.products.productDetails.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;
